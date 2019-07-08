@@ -1,0 +1,18 @@
+{
+  "fb": {
+    "link": "https://www.facebook.com/manan.poddar.942",
+    "image": "/profile/assets/images/social/facebook.png"
+  },
+  "tw": {
+    "link": "https://github.com/mananpoddar",
+    "image": "/profile/assets/images/social/github.png"
+  },
+  "yt": {
+    "link": "https://www.linkedin.com/in/manan-poddar-59226314a/",
+    "image": "/profile/assets/images/social/linkedin.png"
+  },
+  "ig": {
+    "link": "https://www.instagram.com/sensibly.stupid/",
+    "image": "/profile/assets/images/social/instagram.png"
+  }
+}

@@ -1,0 +1,179 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 120px;
+    z-index: 110;
+}
+
+.header .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 27vw;
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 2.6em;
+    background: rgba(0, 0, 0, 0.64);
+    margin: 0;
+    padding: 7% 16px 7% 16px;
+    text-align: center;
+    transform: translateX(100%);
+    transition: all 300ms ease-out;
+}
+
+.header .nav-links li {
+    padding: 7% 16px 7% 16px;
+    width: 100%;
+}
+
+.header .nav-links a {
+    color: white;
+}
+
+.header .nav-links a.active {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.header .nav-links a.active:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+.header .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header i {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    padding: 32px;
+    color: white;
+    z-index: 1000;
+    font-size: 3em;
+    cursor: pointer;
+    transition: all 900ms ease-out;
+}
+
+.header .header-logo img {
+    height: 60px;
+}
+
+.header .header-logo .logo {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    padding-left: calc((9vw - 43px) / 2);
+    padding-right: calc((9vw - 43px) / 2);
+}
+
+.header .header-logo .logo.animated {
+    transition: padding 500ms ease-in-out, transform 500ms ease-in-out, height 500ms ease-out, width 500ms ease-out, left 500ms ease-out, top 500ms ease-in;
+}
+
+.header .header-logo .text {
+    position: absolute;
+    top: 24px;
+    left: 9vw;
+    transition: all 900ms ease-out;
+}
+
+.header .header-logo .text {
+    transition: all 400ms ease-out;
+    box-sizing: border-box;
+}
+
+.header.invert .header-logo .text {
+    filter: invert(100%);
+}
+
+.header .header-logo .text.small {
+    transform: translate(calc(-9vw), 60px);
+    width: 9vw;
+    height: auto;
+    padding: 14px;
+}
+
+.header.invert i {
+    color: black;
+}
+
+.has-divider {
+    border-top: 1px solid white;
+}
+
+.header .register-label {
+    color: white;
+    opacity: 0.8;
+}
+
+/* Mac Pro 13in */
+@media only screen and (min-width: 1400px) and (min-resolution: 96dpi) {
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+.header {
+    max-height: 80px;
+}
+
+.header .header-logo .logo, .header .header-logo .text {
+    top: 16px;
+}
+
+.header .header-logo img {
+    height: 48px;
+}
+
+.header .header-logo .logo {
+    padding-left: calc((9vw - 27.5px) / 2);
+    padding-right: calc((9vw - 27.5px) / 2);
+}
+
+.header .nav-links {
+    font-size: 1.8em;
+    padding: 5% 16px 5% 16px;
+}
+
+.header .nav-links li {
+    padding: 5% 16px 5% 16px;
+}
+
+.header i {
+    right: 0px;
+    padding: 24px;
+    font-size: 2em;
+}
+
+.header .header-logo .text.small {
+    transform: translate(calc(-9vw), 48px);
+    padding: 8px;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+.header {
+    -webkit-transition: max-height 700ms ease-out; /* Safari */
+            transition: max-height 700ms ease-out;
+}
+
+.header .nav-links {
+    width: 75vw;
+}
+
+.header .header-logo .text, .header .header-logo .text.small {
+    top: 133px;
+    left: 0;
+    padding: 4px;
+    height: 9vw;
+    width: auto;
+    transform-origin: top left;
+    transform: rotate(270deg) translateX(-100%);
+}
+
+}

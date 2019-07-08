@@ -1,0 +1,27 @@
+.footer-social {
+  position: fixed;
+  bottom: 2vh;
+  left: calc((9vw - 64px) / 2);
+  transition: all 400ms ease-in-out;
+}
+
+.footer-social.invert, .mobile-footer-social.invert  {
+  filter: invert(100%);
+}
+
+.footer-social li img {
+  height: 54px;
+}
+
+.footer-social li img:hover {
+  transform: scale(1.2);
+}
+
+.mobile-footer-social {
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-footer-social li {
+  display: inline;
+}
