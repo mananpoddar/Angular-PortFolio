@@ -1,6 +1,7 @@
 # Manan Poddar - profile
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.<br>
+Hello Everyone, This projects aims at creating beautiful portfolio websites using angular. For start, you can see my website and can have yours just by changing the data in json files here.<br>
 
 ## Install modules
 
